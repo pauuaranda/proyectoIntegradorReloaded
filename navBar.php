@@ -7,5 +7,5 @@
 <div class ="lineIcon"></div>
 </div>
 <div class="logo mx-auto"><a href="index.php"><img src="img/logo.svg" alt=""></a></div>
-
+<p>lalala</p>
 </div>
