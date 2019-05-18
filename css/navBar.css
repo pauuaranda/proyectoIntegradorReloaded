@@ -1,0 +1,38 @@
+.lineIcon {
+    width: 29px;
+    height: 5px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 6px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+.botonLineas{
+    background-color: black;
+    width: 100px;
+    margin-top: 24px;
+    margin-right: 0px;
+    margin-left: 14px;
+}
+
+.container_navBar{
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background: #000;
+    width: 100%;
+    height: 76px;
+    border-bottom: 4px solid #8400ff;
+}
+.login_img{
+    width: 24px;
+    height: 24px;
+    
+  }
+  .logo img{
+    width: 100px;
+    height: 100px;
+    margin-left: 20px;
+  }
+
+
