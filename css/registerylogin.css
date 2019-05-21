@@ -1,0 +1,176 @@
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+}
+body{
+    color: #c7c7c7;
+    background-color: black;
+    font-family: 'neutra-bookalt';
+}
+@font-face{
+    font-family:'neutra-bookalt';
+    src: url('../fonts/NEUTRATEXT-BOOKALT.OTF') format('opentype'); 
+ }
+ .logo{
+     display: none;
+ }
+.inputs input{
+    width: 85vw;
+    border: solid;
+    border-color: white;
+    border-bottom-width: 1px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background: none;
+    margin-top: 0.5em;
+    height: 2em;
+}
+.inputs input:focus{
+    border-color: #9033A8;
+}
+.inputs{
+    margin-top: 1.7em;
+}
+.inputs input::placeholder{
+    color: gray;
+    font-size: 1.1em;
+    text-align: center;
+}
+.inputs label{
+    font-size: 1.2em;
+}
+.article1 button{
+    margin-top: 1em;
+    width: 40vw;
+    color: #c7c7c7;
+    border-color: #c7c7c7;
+    background: none;
+    margin-bottom: 0.5em;
+    border-width: 2px;
+    border-radius: 6%;
+}
+.article1 .cuenta a{
+    color: #c7c7c7;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+.article1 .cuenta a:hover{
+    font-size: 1.3em;
+    text-decoration: underline;
+}
+.article1 button:hover{
+    border-color: #9033A8;
+    width: 50vw;
+    color: #9033A8;
+}
+.section1{
+    text-align: center;
+}
+.section1 hr{
+    width: 91vw;
+    border-color:#9033A8;
+    ;
+}
+.smalls p{
+    text-align: center;
+    font-size: 0.87em;
+}
+.section1 h1{
+    font-size: 2.3em;
+    margin-top: 1em;
+}
+.section1 .opt1{
+    display: none;
+}
+.olvidepass a{
+    margin-right: 66%;
+    color: #c7c7c7;
+    text-decoration: none;
+}
+.olvidepass a:hover{
+    font-size: 1.1em;
+}
+.recordar{
+    margin-right: 71%;
+}
+.errores{
+    color: red;
+}
+
+@media(min-width:992px){
+    .section1{
+        border:solid;
+        border-color: #9033A8;
+        border-width: 1px;
+        display: flex;
+        width: 40vw;
+        margin-top: 0.1em;
+        margin-bottom: 2em;
+    }
+    .article1{
+        width: 35vw;
+    }
+    .inputs input{
+        width: 30vw;
+    }
+    .section1 hr{
+        width: 35vw;
+    }
+    .article1 button{
+        width: 15vw;
+        border-width: 2px;
+        border-radius: 6%;
+    }
+    .article1 button:hover{
+        width: 20vw;
+    }
+    .section1 .opt1{
+       display: flex;
+        width: 35vw;
+        margin-bottom: 4px;
+        margin-top:2px;
+    }
+    .section1 .opt{
+        display: none;
+    }
+    .logo img{
+        height: 16vw; 
+    }
+    .logo img:hover{
+        opacity: 0.7;
+    }
+    .logo{
+        display: flex;
+        justify-content: center;
+    }
+    .olvidepass a{
+        margin-right: 54%;
+        color: #c7c7c7;
+        text-decoration: none;
+    }
+    .recordar{
+        margin-right: 63%;
+    }
+}
+@media(max-width:653px){
+    .olvidepass a{
+        margin-right: 60%;
+        color: #c7c7c7;
+        text-decoration: none;
+    }
+    .recordar{
+        margin-right: 65%;
+    }
+}
+@media(max-width:400px){
+    .olvidepass a{
+        margin-right: 50%;
+        color: #c7c7c7;
+        text-decoration: none;
+    }
+    .recordar{
+        margin-right: 60%;
+    }
+}
