@@ -12,6 +12,7 @@
         if ($numero==8) { $avatarrand="../avatars/avatar8.svg";}
         $usuario = [
             "nombre"=>$user->getNombre(),
+            "apellido"=>$user->getApellido(),
             "email"=>$user->getEmail(),
             "password"=>password_hash($user->getPassword(),PASSWORD_DEFAULT),
             "avatar"=>$avatarrand,

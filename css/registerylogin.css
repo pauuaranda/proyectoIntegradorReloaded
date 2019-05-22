@@ -16,7 +16,7 @@ body{
      display: none;
  }
 .inputs input{
-    width: 85vw;
+    width: 55vw;
     border: solid;
     border-color: white;
     border-bottom-width: 1px;
@@ -69,7 +69,7 @@ body{
     text-align: center;
 }
 .section1 hr{
-    width: 91vw;
+    width: 65vw;
     border-color:#9033A8;
     ;
 }
@@ -85,7 +85,7 @@ body{
     display: none;
 }
 .olvidepass a{
-    margin-right: 66%;
+    margin-right: 25%;
     color: #c7c7c7;
     text-decoration: none;
 }
@@ -93,7 +93,7 @@ body{
     font-size: 1.1em;
 }
 .recordar{
-    margin-right: 71%;
+    margin-right: 33%;
 }
 .errores{
     color: red;
@@ -105,7 +105,7 @@ body{
         border-color: #9033A8;
         border-width: 1px;
         display: flex;
-        width: 40vw;
+        width: 37vw;
         margin-top: 0.1em;
         margin-bottom: 2em;
     }
@@ -113,10 +113,10 @@ body{
         width: 35vw;
     }
     .inputs input{
-        width: 30vw;
+        width: 20vw;
     }
     .section1 hr{
-        width: 35vw;
+        width: 32vw;
     }
     .article1 button{
         width: 15vw;
@@ -145,32 +145,32 @@ body{
         display: flex;
         justify-content: center;
     }
-    .olvidepass a{
-        margin-right: 54%;
+    .article1 .olvidepass a{
+        margin-right: 30%;
         color: #c7c7c7;
         text-decoration: none;
     }
-    .recordar{
-        margin-right: 63%;
+    .article1 .recordar{
+        margin-right: 38%;
     }
 }
-@media(max-width:653px){
+@media(min-width:653px){
     .olvidepass a{
-        margin-right: 60%;
+        margin-right: 35%;
         color: #c7c7c7;
         text-decoration: none;
     }
     .recordar{
-        margin-right: 65%;
+        margin-right: 40%;
     }
 }
-@media(max-width:400px){
+@media(min-width:850px){
     .olvidepass a{
-        margin-right: 50%;
+        margin-right: 40%;
         color: #c7c7c7;
         text-decoration: none;
     }
     .recordar{
-        margin-right: 60%;
+        margin-right: 45%;
     }
 }
