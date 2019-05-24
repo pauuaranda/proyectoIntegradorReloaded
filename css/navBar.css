@@ -1,5 +1,4 @@
 .lineIcon {
-    width: 29px;
     height: 5px;
     background-color: rgb(255, 255, 255);
     margin-top: 6px;
@@ -9,10 +8,10 @@
 
 .botonLineas{
     background-color: black;
-    width: 100px;
-    margin-top: 24px;
-    margin-right: 0px;
-    margin-left: 14px;
+    width: 33px;
+    margin-top: 18
+    px;
+   
 }
 
 .container_navBar{
@@ -23,16 +22,67 @@
     width: 100%;
     height: 76px;
     border-bottom: 4px solid #8400ff;
+    display: flex;
+    padding-top: 20px
 }
-.login_img{
-    width: 24px;
-    height: 24px;
-    
-  }
-  .logo img{
-    width: 100px;
-    height: 100px;
-    margin-left: 20px;
-  }
 
+.logo{
 
+    width: 75px;   
+    margin-top: -21px;
+}
+
+.botonNavBar{
+    width: 33px;
+}
+
+.container_NavBarVertical{
+display: none;
+}
+.logo_Vertical img{
+   display: none;
+}
+.shop_Icon img{
+    display: none;
+}
+
+/* --------------------------------MEDIA QUERIES------------------------------------------- */
+@media(min-width:992px){
+.container_navBar{
+    display: none;
+}
+.container_NavBarVertical{
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 125px;
+    height: 100%;
+    background: #000;
+    z-index: 1001;
+}
+.logo_Vertical img{
+    width: 116px;
+    display: flex;
+    position: absolute;
+    z-index: 1002;
+    left: 3px;
+}
+.logo_Vertical{
+    width: 100%;
+}
+.shop_Icon img{
+    width: 11%;
+    display: flex;
+    position: absolute;
+    z-index: 1002;
+    left: 64px;
+}
+.container_verticalIcons{
+    position: absolute;
+    width: 100%;
+    display: block;
+    top: 50%;
+}
+}
