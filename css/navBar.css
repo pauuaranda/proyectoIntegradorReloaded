@@ -73,11 +73,25 @@ display: none;
     width: 100%;
 }
 .shop_Icon img{
+    width: 7%;
+    display: flex;
+    position: absolute;
+    z-index: 1002;
+    left: 13px;
+}
+.cart_Icon img{
     width: 11%;
     display: flex;
     position: absolute;
     z-index: 1002;
-    left: 64px;
+    left: 13px;
+}
+.cart_Icon img{
+    width: 11%;
+    display: flex;
+    position: absolute;
+    z-index: 1002;
+    left: 13px;
 }
 .container_verticalIcons{
     position: absolute;

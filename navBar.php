@@ -18,5 +18,11 @@
             <div class="shop_Icon">
             <a  class="nav_Icons" href="shop.php"><img src="img/shop_icon.svg" alt="shop_icon"> </a>
             </div> 
+            <div class="cart_Icon">
+            <a  class="nav_Icons" href="cart.php"><img src="img/carrito.svg" alt="cart_icon"> </a>
+            </div>
+            <div class="profile_Icon">
+            <a  class="nav_Icons" href="profile.php"><img src="img/profile.png" alt="profile_icon"> </a>
+            </div>
         </div>
 </nav>
