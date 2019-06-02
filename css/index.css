@@ -13,9 +13,9 @@ body{
 
 @font-face{
     font-family:'neutra-bookalt';
-    src: url('../fonts/neutra/NEUTRATEXT-BOOKALT.OTF') format('opentype'); 
+    src: url('../fonts/NEUTRATEXT-BOOKALT.OTF') format('opentype'); 
  }
  @font-face{
     font-family:'neutra-demialt';
-    src: url('../fonts/neutra/NEUTRATEXT-DEMIALT.OTF') format('opentype'); 
+    src: url('../fonts/NEUTRATEXT-DEMIALT.OTF') format('opentype'); 
  }

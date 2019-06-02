@@ -1,0 +1,44 @@
+/* ------------------Aplica para resultados de Search como para mostrar Productos---------------------- */
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+}
+
+@font-face{
+    font-family:'neutra-bookalt';
+    src: url('../fonts/NEUTRATEXT-BOOKALT.OTF') format('opentype'); 
+ }
+ @font-face{
+    font-family:'neutra-demialt';
+    src: url('../fonts/NEUTRATEXT-DEMIALT.OTF') format('opentype'); 
+ }
+
+ .containerPage{
+    background-color: aquamarine;
+    height: 10em;
+    width: 100%;
+    margin-top: 4.5em;
+     
+     
+ }
+ body{
+    text-align: center;
+   background-color: rgb(44, 40, 40,);
+   color: rgb(31, 31, 31);
+   font-family: 'neutra-bookalt';
+ }
+  .sectionProductos .productos{
+     width: 50%;
+     height:5em;
+ }
+/* ---------------------Media Querie Large----------------*/
+@media(min-width:992px){
+    .containerPage{
+        background-color:aquamarine;
+        height: 100%; 
+        width: 91%;
+        margin-left: 9%;
+        
+    }
+}

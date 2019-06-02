@@ -54,7 +54,9 @@ display: none;
 .search_Icon img{
     display: none;
 }
-
+.help_Icon img{
+    display: none;
+}
 /* --------------------------------MEDIA QUERIES------------------------------------------- */
 @media(min-width:992px){
 .container_navBar{

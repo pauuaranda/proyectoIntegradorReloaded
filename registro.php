@@ -9,7 +9,7 @@ if($_POST){
       $errores["email"]="El email esta en uso.";
     }else{
         $userNuevo=$newUser->armarUser($usuario);
-         BaseDatosMsql::guardar($pdo,$userNuevo,'users');
+         BaseDatosMysql::guardar($pdo,$userNuevo,'users');
          redirect ("login.php");
     }
   }

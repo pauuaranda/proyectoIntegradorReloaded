@@ -1,6 +1,7 @@
  
 <!-- /*----------------------------Mobile First NavBar-------------------------------*/  -->
 <nav>
+    <link rel="stylesheet" href="css/navBar.css">
 <div class="container_navBar">
         <div Class ="botonLineas">
         <div class ="lineIcon"></div>
@@ -22,7 +23,7 @@
             <a  class="nav_Icons" href="cart.php"><img src="img/carrito.svg" alt="cart_icon"> </a>
             </div>
             <div class="search_Icon">
-            <a  class="nav_Icons" href="search.php"><img src="img/search.svg" alt="search_icon"> </a>
+            <a  class="nav_Icons" href="searchResult.php"><img src="img/search.svg" alt="search_icon"> </a>
             </div>
             <div class="profile_Icon">
             <a  class="nav_Icons" href="profile.php"><img src="img/profile2.svg" alt="profile_icon"> </a>

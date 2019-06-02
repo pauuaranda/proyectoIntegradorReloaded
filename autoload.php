@@ -11,17 +11,16 @@
     require_once("clases/OlvidePassword.php");
     require_once("clases/Query.php");
 
-
+    $host="localhost";
+    // $dsn="127.0.0.1";
+     $db="Blackeye";
+     $user="blackeye";
+     $pass="egpcfa2621";
+     $puerto="3307";
+     $charset = "utf8mb4";
+     $pdo=BaseDatosMysql::conexion($host,$db,$user,$pass,$puerto,$charset);
     $validar = new Validador();
     $newUser = new ArmarUsuario();
    // $json = new BaseJSON("usuarios.json");
     $session = new SessionCookie();
-    $host="localhost";
-   // $dsn="127.0.0.1";
-    $db="blackeye";
-    $user="ferrer";
-    $pass="123456";
-    $puerto="3306";
-    $charset = "utf8mb4";
-    $pdo=BaseDatosMysql::conexion($host,$db,$user,$pass,$puerto,$charset);
     SessionCookie::sessionStart();
