@@ -1,7 +1,7 @@
 <?php
   include_once("autoload.php");
   if($_POST){
-    $user=new Usuario($_POST["email"],$_POST["pass"],null);
+    $user=new Usuario($_POST["email"],$_POST["pass"],null,null);
     $errores=$validar->validarLogin($user);
     $pass=$user->getPassword();
     if(isset($_POST["remember"])){

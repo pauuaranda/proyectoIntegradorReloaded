@@ -7,6 +7,7 @@
         }
         static public function setUser($user){
             $_SESSION["nombre"]=$user["nombre"];
+            $_SESSION["apellido"]=$user["apellido"];
             $_SESSION["email"]=$user["email"];
             $_SESSION["avatar"]=$user["avatar"];
             $_SESSION["perfil"]=$user["perfil"];

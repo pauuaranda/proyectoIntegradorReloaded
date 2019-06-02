@@ -7,11 +7,19 @@
                 if (empty($nombre)){
                     $errores["nombre"]="El campo nombre no debe esar vacio";
                     }
-                if(preg_match("/^[a-zA-Z0-9]{2,16}$/",$usuario->getNombre())==null){
+                if(preg_match("/^[a-zA-Z]{2,16}$/",$usuario->getNombre())==null){
                     $errores["nombre"]="El nombre no tiene que tener caracteres especiales";
                 }
             }    
-        
+            $apellido = trim($usuario->getApellido());
+            if (isset($apellido)) {
+                if (empty($apellido)){
+                    $errores["apellido"]="El campo apellido no debe esar vacio";
+                    }
+                if(preg_match("/^[a-zA-Z]{2,16}$/",$usuario->getApellido())==null){
+                    $errores["apellido"]="El apellido no tiene que tener caracteres especiales";
+                }
+            }    
             $email = trim($usuario->getEmail());
             if(empty($email)){
                 $errores["email"]="Completar email";

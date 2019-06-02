@@ -1,10 +1,10 @@
 <?php
     abstract class BaseDeDatos{
-        abstract public function guardar(array $registro);
+    abstract static public function guardar($pdo,$usuario,$tabla);
 
-        abstract public function leer();
+        abstract static public function leer();
 
-        abstract public function borrar();
+        abstract static function borrar();
 
-        abstract public function actualizar();
+        abstract static function actualizar();
     }

@@ -1,7 +1,27 @@
 <?php
 include_once("autoload.php");
 if($_POST){
-  $usuario = new Usuario($_POST["email"],$_POST["pass"],$_POST["nombre"]);
+  $usuario= new Usuario($_POST["email"],$_POST["pass"],$_POST["nombre"],$_POST["apellido"]);
+  $errores = $validar->validarUsuario($usuario, $_POST["repass"]);
+  if(count($errores)==0){
+    $user = Query::buscarEmail($usuario->getEmail(),$pdo,'users');
+    if($user==null){
+      $errores["email"]="El email esta en uso.";
+    }else{
+        $userNuevo=$newUser->armarUser($usuario);
+         BaseDatosMsql::guardar($pdo,$userNuevo,'users');
+         redirect ("login.php");
+    }
+  }
+}
+
+
+
+
+
+/*include_once("autoload.php");
+if($_POST){
+  $usuario = new Usuario($_POST["email"],$_POST["pass"],$_POST["nombre"],$_POST["apellido"]);
   $errores = $validar -> validarUsuario($usuario,$_POST["repass"]);
   if (count($errores)== 0){
     $verJson = $json-> leer();
@@ -14,7 +34,7 @@ if($_POST){
       redirect("login.php");
     }
   }
-}
+}*/
 ?>
 
 <!DOCTYPE html>
@@ -44,8 +64,13 @@ if($_POST){
                             <span class="errores"> <?= isset($errores["nombre"])?$errores["nombre"]:null; ?> </span>
                     </div>
                     <div class="inputs">
+                            <label for="nombre">Apellido:</label> <br>
+                            <input name="apellido" type="text" id="apellido" value="<?= (isset($errores["apellido"]))? "" : persistir("apellido"); ?>" placeholder="Ingrese su apellido ..." required  > <br>
+                            <span class="errores"> <?= isset($errores["apellido"])?$errores["apellido"]:null; ?> </span>
+                    </div>
+                    <div class="inputs">
                       <label for="email">Email:</label> <!--NAME="email"--> <br>
-                      <input name="email" type="email" id="exampleInputEmail1" aria-describedby="emailHelp" value="<?=(isset($errores["email"]))? "" : persistir("email");?>" placeholder="Ingrese email..."required > <br>
+                      <input name="email" type="email" id="exampleInputEmail1" aria-describedby="emailHelp" value="<?=(isset($errores["email"]))? "" : persistir("email");?>" placeholder="Ingrese email ..."required > <br>
                       <span class="errores"> <?= isset($errores["email"])?$errores["email"]:null; ?> </span>
                       <small id="emailHelp" class="form-text text-muted"></small>
                     </div>
