@@ -1,6 +1,26 @@
 <?php
 include_once("autoload.php");
 if($_POST){
+  $usuario= new Usuario($_POST["email"],$_POST["pass"],$_POST["nombre"],$_POST["apellido"]);
+  $errores = $validar->validarUsuario($usuario, $_POST["repass"]);
+  if(count($errores)==0){
+    $user = Query::buscarEmail($usuario->getEmail(),$pdo,'users');
+    if($user==null){
+      $errores["email"]="El email esta en uso.";
+    }else{
+        $userNuevo=$newUser->armarUser($usuario);
+         BaseDatosMsql::guardar($pdo,$userNuevo,'users');
+         redirect ("login.php");
+    }
+  }
+}
+
+
+
+
+
+/*include_once("autoload.php");
+if($_POST){
   $usuario = new Usuario($_POST["email"],$_POST["pass"],$_POST["nombre"],$_POST["apellido"]);
   $errores = $validar -> validarUsuario($usuario,$_POST["repass"]);
   if (count($errores)== 0){
@@ -14,7 +34,7 @@ if($_POST){
       redirect("login.php");
     }
   }
-}
+}*/
 ?>
 
 <!DOCTYPE html>

@@ -1,6 +1,6 @@
 <?php
     class ArmarUsuario{
-        public function armarUser($user){
+        static public function armarUser($user){
         $numero=rand(1,8);
         if ($numero==1) { $avatarrand="../avatars/avatar1.svg";}
         if ($numero==2) { $avatarrand="../avatars/avatar2.svg";}
