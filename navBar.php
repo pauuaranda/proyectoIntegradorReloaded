@@ -21,8 +21,14 @@
             <div class="cart_Icon">
             <a  class="nav_Icons" href="cart.php"><img src="img/carrito.svg" alt="cart_icon"> </a>
             </div>
-            <div class="profile_Icon">
-            <a  class="nav_Icons" href="profile.php"><img src="img/profile.png" alt="profile_icon"> </a>
+            <div class="search_Icon">
+            <a  class="nav_Icons" href="search.php"><img src="img/search.svg" alt="search_icon"> </a>
             </div>
+            <div class="profile_Icon">
+            <a  class="nav_Icons" href="profile.php"><img src="img/profile2.svg" alt="profile_icon"> </a>
+            </div>
+        <div class="help_Icon">
+            <a  class="nav_Icons" href="help.php"><img src="img/help.svg" alt="help_icon"> </a>
+        </div>
         </div>
 </nav>

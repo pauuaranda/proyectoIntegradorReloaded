@@ -45,6 +45,15 @@ display: none;
 .shop_Icon img{
     display: none;
 }
+.cart_Icon img{
+    display: none;
+}
+.profile_Icon img{
+    display: none;
+}
+.search_Icon img{
+    display: none;
+}
 
 /* --------------------------------MEDIA QUERIES------------------------------------------- */
 @media(min-width:992px){
@@ -73,30 +82,50 @@ display: none;
     width: 100%;
 }
 .shop_Icon img{
-    width: 7%;
+    width: 45px;
     display: flex;
     position: absolute;
     z-index: 1002;
-    left: 13px;
+    left: 40px;
+    top: 200px;
 }
 .cart_Icon img{
-    width: 11%;
+    width: 45px;
     display: flex;
     position: absolute;
     z-index: 1002;
-    left: 13px;
+    left: 40px;
+    top: 280px;
 }
-.cart_Icon img{
-    width: 11%;
+.profile_Icon img{
+    width: 45px;
     display: flex;
     position: absolute;
     z-index: 1002;
-    left: 13px;
+    left: 44px;
+    top: 437px;
 }
-.container_verticalIcons{
+.search_Icon img{
+    width: 38px;
+display: flex;
+position: absolute;
+z-index: 1002;
+left: 47px;
+top: 365px;
+}
+.help_Icon img{
+    width: 29px;
+    display: flex;
+    position: absolute;
+    z-index: 1002;
+    left: 47px;
+    top: 560px;
+}
+.container_verticalIcons .row{
     position: absolute;
     width: 100%;
     display: block;
     top: 50%;
+    margin: auto 0;
 }
 }
