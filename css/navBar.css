@@ -1,0 +1,131 @@
+.lineIcon {
+    height: 5px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 6px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+.botonLineas{
+    background-color: black;
+    width: 33px;
+    margin-top: 18
+    px;
+   
+}
+
+.container_navBar{
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background: #000;
+    width: 100%;
+    height: 76px;
+    border-bottom: 4px solid #8400ff;
+    display: flex;
+    padding-top: 20px
+}
+
+.logo{
+
+    width: 75px;   
+    margin-top: -21px;
+}
+
+.botonNavBar{
+    width: 33px;
+}
+
+.container_NavBarVertical{
+display: none;
+}
+.logo_Vertical img{
+   display: none;
+}
+.shop_Icon img{
+    display: none;
+}
+.cart_Icon img{
+    display: none;
+}
+.profile_Icon img{
+    display: none;
+}
+.search_Icon img{
+    display: none;
+}
+
+/* --------------------------------MEDIA QUERIES------------------------------------------- */
+@media(min-width:992px){
+.container_navBar{
+    display: none;
+}
+.container_NavBarVertical{
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 125px;
+    height: 100%;
+    background: #000;
+    z-index: 1001;
+}
+.logo_Vertical img{
+    width: 116px;
+    display: flex;
+    position: absolute;
+    z-index: 1002;
+    left: 3px;
+}
+.logo_Vertical{
+    width: 100%;
+}
+.shop_Icon img{
+    width: 45px;
+    display: flex;
+    position: absolute;
+    z-index: 1002;
+    left: 40px;
+    top: 200px;
+}
+.cart_Icon img{
+    width: 45px;
+    display: flex;
+    position: absolute;
+    z-index: 1002;
+    left: 40px;
+    top: 280px;
+}
+.profile_Icon img{
+    width: 45px;
+    display: flex;
+    position: absolute;
+    z-index: 1002;
+    left: 44px;
+    top: 437px;
+}
+.search_Icon img{
+    width: 38px;
+display: flex;
+position: absolute;
+z-index: 1002;
+left: 47px;
+top: 365px;
+}
+.help_Icon img{
+    width: 29px;
+    display: flex;
+    position: absolute;
+    z-index: 1002;
+    left: 47px;
+    top: 560px;
+}
+.container_verticalIcons .row{
+    position: absolute;
+    width: 100%;
+    display: block;
+    top: 50%;
+    margin: auto 0;
+}
+}
