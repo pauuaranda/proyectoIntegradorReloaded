@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-<<<<<<< HEAD
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,19 +8,8 @@
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
         <title>:: Black Eye Gaming ::</title>
-=======
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/navBar.css">
-    <title>:: Black Eye Gaming ::</title>
->>>>>>> 364d2c17803670d975c5ee57487d982be3c31968
 </head>
-
 <body>
-<<<<<<< HEAD
     <!--<div class="sidebar">
         <h2>Slide de prueba</h2>
         <ul>
@@ -73,12 +61,9 @@
         <li><button class="button">Lorem, ipsum 3.</button></li>
     </ol>
 
+    
+
  </div>
  <script src="js/main.js"></script>
-=======
-<?php include_once ("navBar.php"); ?>
-    <h2>GOGOGOOGOGO</h2>
-    <p>asdfgh</p>
->>>>>>> 364d2c17803670d975c5ee57487d982be3c31968
 </body>
 </html>
