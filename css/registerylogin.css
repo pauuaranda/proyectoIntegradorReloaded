@@ -26,6 +26,7 @@ body{
     background: none;
     margin-top: 0.5em;
     height: 2em;
+    color: #c7c7c7;
 }
 .inputs input:focus{
     border-color: #9033A8;
