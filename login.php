@@ -1,6 +1,12 @@
 <?php
-  include_once("autoload.php");
-  if($_POST){
+ include_once("autoload.php");
+ 
+ 
+ 
+ 
+ 
+ 
+ /* if($_POST){
     $user=new Usuario($_POST["email"],$_POST["pass"],null,null);
     $errores=$validar->validarLogin($user);
     $pass=$user->getPassword();
@@ -27,7 +33,7 @@
       }  
     }
   }
-  }
+  }*/
 ?>
 
 <!DOCTYPE html>

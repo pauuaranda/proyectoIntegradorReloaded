@@ -5,12 +5,12 @@ if($_POST){
   $errores = $validar->validarUsuario($usuario, $_POST["repass"]);
   if(count($errores)==0){
     $user = Query::buscarEmail($usuario->getEmail(),$pdo,'Users');
-    if($user==null){
+    if($user!=null){
       $errores["email"]="El email esta en uso.";
     }else{
         $userNuevo=$newUser->armarUser($usuario);
-         BaseDatosMysql::guardar($pdo,$userNuevo,'users');
-         redirect ("login.php");
+        BaseDatosMysql::guardar($pdo,$userNuevo,'users');
+        redirect ("login.php");
     }
   }
 }

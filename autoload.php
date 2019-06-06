@@ -6,7 +6,7 @@
     require_once("clases/BaseDeDatos.php");
     //require_once("clases/BaseJSON.php");
     require_once("clases/BaseDatosMysql.php");
-    require_once("clases/Buscador.php");
+    //require_once("clases/Buscador.php");
     require_once("clases/SessionCookie.php");
     require_once("clases/OlvidePassword.php");
     require_once("clases/Query.php");
