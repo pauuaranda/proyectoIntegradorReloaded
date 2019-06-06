@@ -1,6 +1,6 @@
 <?php 
     class Query{
-        static public function buscarEmail(){
+        static public function buscarEmail($email,$pdo,$tabla){
         $sql = "select * from $tabla where email = :email";
         $query = $pdo->prepare($sql);
         $query->bindValue(':email',$email);

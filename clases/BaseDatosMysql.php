@@ -1,26 +1,18 @@
 <?php 
+
     class BaseDatosMysql extends BaseDeDatos{
-        static public function conexion($host,$db,$user,$pass,$puerto,$charset){
+        static public function conexion($host,$db,$user,$pass,$puerto){
             try{
-                $dsn="mysql:host=".$host.";"."dbname=".$db.";"."port=".$puerto.";"."charset=".$charset;
-                $baseDatos=new PDO($dsn,$user,$pass);
-                $baseDatos->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXECPTION);  
-                return $baseDatos;
+                $dsn="mysql:host=".$host.";"."dbname=".$db.";"."port=".$puerto;
+                $mdb=new PDO($dsn,$user,$pass);
+                $mdb->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);  
+                return $mdb;
             }catch(PDOException $e){
-                "Ocurrio un error en la apertura de la base de datos. Salu2".$e->getmessage();
+                echo "Ocurrio un error en la apertura de la base de datos.  ".$e->getmessage();
                 exit;
             }
         }
-        /* try {
-            $dsn = "mysql:host=".$host.";"."dbname=".$db_nombre.";"."port=".$puerto.";"."charset=".$charset;
-            $baseDatos = new PDO($dsn,$usuario,$password);
-            $baseDatos->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
-            return $baseDatos;
-        } catch (PDOException $errores) {
-            echo "No me pude conectar a la BD ". $errores->getmessage();
-            exit;
-        }
-    }*/
+        
         static public function guardar($pdo,$usuario,$tabla){
             $sql = "insert into $tabla (first_name,last_name,email,password,profile,avatar) values (:first_name,:last_name,:email,:password,:profile,:avatar )";
             $query = $pdo->prepare($sql);
