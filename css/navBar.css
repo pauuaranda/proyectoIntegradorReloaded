@@ -37,23 +37,9 @@
 }
 
 .container_NavBarVertical{
-display: none;
+  display: none;
 }
-.logo_Vertical img{
-   display: none;
-}
-.shop_Icon img{
-    display: none;
-}
-.cart_Icon img{
-    display: none;
-}
-.profile_Icon img{
-    display: none;
-}
-.search_Icon img{
-    display: none;
-}
+
 
 /* --------------------------------MEDIA QUERIES------------------------------------------- */
 @media(min-width:992px){
