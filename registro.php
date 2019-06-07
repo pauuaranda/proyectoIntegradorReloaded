@@ -4,17 +4,37 @@ if($_POST){
   $usuario= new Usuario($_POST["email"],$_POST["pass"],$_POST["nombre"],$_POST["apellido"]);
   $errores = $validar->validarUsuario($usuario, $_POST["repass"]);
   if(count($errores)==0){
-    $user = Query::buscarEmail($usuario->getEmail(),$pdo,'Users');
-    if($user!=null){
+    $user = Query::buscarEmail($usuario->getEmail(),$pdo,'users');
+    if($user==null){
       $errores["email"]="El email esta en uso.";
     }else{
         $userNuevo=$newUser->armarUser($usuario);
-         BaseDatosMysql::guardar($pdo,$userNuevo,'Users');
+         BaseDatosMysql::guardar($pdo,$userNuevo,'users');
          redirect ("login.php");
     }
   }
 }
 
+
+
+
+
+/*include_once("autoload.php");
+if($_POST){
+  $usuario = new Usuario($_POST["email"],$_POST["pass"],$_POST["nombre"],$_POST["apellido"]);
+  $errores = $validar -> validarUsuario($usuario,$_POST["repass"]);
+  if (count($errores)== 0){
+    $verJson = $json-> leer();
+    $user = Buscador::buscarEmail($usuario->getEmail(),$verJson);
+    if($user!=null){
+      $errores["email"] = "este email ya esta registrado";
+    }else{
+      $userNuevo = $newUser -> armarUser($usuario);
+      $json-> guardar($userNuevo);
+      redirect("login.php");
+    }
+  }
+}*/
 ?>
 
 <!DOCTYPE html>

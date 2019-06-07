@@ -39,8 +39,14 @@
 .container_NavBarVertical{
   display: none;
 }
+<<<<<<< HEAD
 
 
+=======
+.help_Icon img{
+    display: none;
+}
+>>>>>>> cambiosPau
 /* --------------------------------MEDIA QUERIES------------------------------------------- */
 @media(min-width:992px){
 .container_navBar{

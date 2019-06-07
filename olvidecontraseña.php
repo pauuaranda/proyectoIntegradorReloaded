@@ -1,19 +1,19 @@
 <?php
   include_once("autoload.php");
- if ($_POST) {
-    $user= new Usuario($_POST["email"],null,null.null);
+  if ($_POST) {
+    $user=new Usuario($_POST["email"],null,null,null);
     $errores=$validar->validarOlvidarPass($user,$_POST["pass"],$_POST["repass"]);
-    if (count($errores)==0) {
-      $newpass=$_POST["pass"];
-      $usuario= Query::buscarEmail($user->getEmail(),$pdo,'Users');
-      if ($usuario==null) {
-        $errores["email"]="Usuario Invalido";
-      }else {
-        Query::cambioPass($user->getEmail(),$newpass,$pdo,'Users');
-        redirect("contrarecuperada.php");
-      }
-    }
- }
+    if(count($errores)==0){
+      $verJson = $json-> leer();
+      $usuario = Buscador::buscarEmail($user->getEmail(),$verJson);
+      if($usuario==null){
+        $errores["email"] = "Usuario invalido";
+        }else{
+          OlvidePassword::cambioPass($user->getEmail(),$_POST["pass"],$verJson,$json);
+          redirect("contrarecuperada.php");
+        }
+    } 
+  }
 ?>
 
 <!DOCTYPE html>
