@@ -14,14 +14,14 @@
     <div class="containerPage">    
         <div class="banner">
             <section class="sectbanner">
-                <article>
-                    <input type="text">
-                </article>
             </section>
         </div>
             <div class="containerProducts">
-                <section class="sectionProductos">
-                    <article class="productos"><img src="img/razer1.jpg" alt="A1"></article>
+                <section class="sectionProductos">             
+                    <article class="productos"><img src="img/razer3.jpg" alt="A1"></article>
+                    <article class="productos"><img src="img/razer3.jpg" alt="A1"></article>
+                    <article class="productos"><img src="img/razer3.jpg" alt="A1"></article>
+                    <article class="productos"><img src="img/razer3.jpg" alt="A1"></article>
                 </section>
             </div>
         
