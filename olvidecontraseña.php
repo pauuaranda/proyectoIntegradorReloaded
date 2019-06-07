@@ -2,14 +2,14 @@
   include_once("autoload.php");
  if ($_POST) {
     $user= new Usuario($_POST["email"],null,null.null);
-    $errores=$validar->validarOlivarPass($user,$_POST["pass"],$_POST["repass"]);
+    $errores=$validar->validarOlvidarPass($user,$_POST["pass"],$_POST["repass"]);
     if (count($errores)==0) {
       $newpass=$_POST["pass"];
       $usuario= Query::buscarEmail($user->getEmail(),$pdo,'Users');
       if ($usuario==null) {
         $errores["email"]="Usuario Invalido";
       }else {
-        Query::cambioPass($newpass,$pdo,'Users');
+        Query::cambioPass($user-getEmail(),$newpass,$pdo,'Users');
         redirect("contrarecuperada.php");
       }
     }

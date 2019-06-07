@@ -8,9 +8,10 @@
             $usuario = $query->fetch(PDO::FETCH_ASSOC);
             return $usuario;
         }
-        static public function cambioPass($newpass,$pdo,$tabla){
-            $sql="update $tabla set password=:newpass";
+        static public function cambioPass($email,$newpass,$pdo,$tabla){
+            $sql="update $tabla set password=:newpass where email= :email";
             $query = $pdo->prepare($sql);
+            $query->bindValue(':email',$email);
             $query->bindValue(':newpass',password_hash($newpass),PASSWORD_DEFAULT);
             $query->execute();
         }
