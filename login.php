@@ -1,30 +1,32 @@
 <?php
   include_once("autoload.php");
-  if ($_POST){
+  if($_POST){
     $user=new Usuario($_POST["email"],$_POST["pass"],null,null);
     $errores=$validar->validarLogin($user);
     $pass=$user->getPassword();
     if(isset($_POST["remember"])){
       $remember=$_POST["remember"];
     }else{null;}
-    if(count($errores)==0){
-      $usuario=Query::buscarEmail($user->getEmail(),$pdo,'Users');
-      if ($usuario==null) {
-        $errores["email"]="primero debe registrarse";
-      }else{
-        if(password_verify($pass,$usuario['password'])==false){
-          $errores["pass"]="Usuario o contraseña Erroneas";
-        }else{
-          $session->setUser($usuario);
-          $session->setCookie($usuario,$remember);
-          if($session->validarUser()){
-            redirect("index.php");
-          }else{
-            redirect("registro.php");
-          }
-        }
+    if (count($errores)==0) {
+    $verJson = $json-> leer();
+    $usuario = Buscador::buscarEmail($user->getEmail(),$verJson);
+    if($usuario==null){
+      $errores["email"] = "Primero debe registrarse";
       }
+      else{
+      if (password_verify($pass,$usuario["password"])==false) {
+        $errores["pass"]="Usuario o contraseña Erroneas";
+      }else{
+        $session->setUser($usuario);
+        //$session->setCookie($usuario,$remember);
+        if ($session->validarUser()) {
+          redirect("index.php");
+        }else{
+          redirect("registro.php");
+        }
+      }  
     }
+  }
   }
 ?>
 
