@@ -78,6 +78,8 @@ body{
 }
 /*---------*/
 
+
+/*---Slider--*/
 .slideshow ul,ol{
    list-style: none;
    padding:0;
@@ -88,6 +90,7 @@ body{
    width:100%;
    position:relative;
    top:77px;
+   overflow: hidden;
 }
 
 .slider li, ul{
@@ -160,4 +163,38 @@ body{
    .slider li img{
       height:100%;
    }
+}
+
+
+
+/*---Productos---*/
+
+.contenedor{
+   background-color: aqua;
+}
+
+.carousel{
+   position:inherit;
+}
+
+.carousel-inner{
+   width: 91%;
+   float: right;
+}
+
+.__slider{
+   display:flex;
+   width: 100%;
+}
+
+.__slider .__product{
+   margin:1%;
+   width:25%;
+}
+.__slider .__product img{
+   max-width: 100%;
+}
+
+.__slider .__product p{
+   background-color: white;
 }
