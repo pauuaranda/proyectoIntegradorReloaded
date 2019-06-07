@@ -14,11 +14,7 @@
             "nombre"=>$user->getNombre(),
             "apellido"=>$user->getApellido(),
             "email"=>$user->getEmail(),
-<<<<<<< HEAD
             "password"=>$user->getPassword(),
-=======
-            "password"=>password_hash($user->getPassword(),PASSWORD_DEFAULT),
->>>>>>> cambiosPau
             "avatar"=>$avatarrand,
             "perfil"=>"1"
         ];
