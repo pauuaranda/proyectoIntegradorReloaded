@@ -9,7 +9,7 @@
       if ($usuario==null) {
         $errores["email"]="Usuario Invalido";
       }else {
-        Query::cambioPass($user-getEmail(),$newpass,$pdo,'Users');
+        Query::cambioPass($user->getEmail(),$newpass,$pdo,'Users');
         redirect("contrarecuperada.php");
       }
     }
