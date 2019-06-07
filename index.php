@@ -69,15 +69,22 @@
                 <div class="__slider">
                     <div class="__product">
                       <img class="" src="img/razer2.jpg" alt="1 slide"></<img>
-                      <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam, incidunt?</p>
+                      <div class="description">
+                          <p >Lorem ipsum dolor sit amet consectetur.</p>
+                          <span>$40</span>
                     </div>
                     <div class="__product">
                       <img class="" src="img/razer2.jpg" alt="2 slide"></<img>
-                      <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam, incidunt?</p>
+                      <div class="description">
+                          <p >Lorem ipsum dolor sit amet consectetur.</p>
+                          <span>$40</span>
                     </div>
                     <div class="__product">
                       <img class="" src="img/razer2.jpg" alt="3 slide"></<img>
-                      <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam, incidunt?</p>
+                      <div class="description">
+                          <p >Lorem ipsum dolor sit amet consectetur.</p>
+                          <span>$40</span>
+                      </div>
                     </div>
                 </div>
             </div>
@@ -85,15 +92,21 @@
                 <div class="__slider">
                     <div class="__product">
                       <img class="" src="img/razer3.jpg" alt="4 slide"></<img>
-                      <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam, incidunt?</p>
+                      <div class="description">
+                          <p>Lorem ipsum dolor sit amet consectetur.</p>
+                          <span>$30</span>
                     </div>
                     <div class="__product">
                       <img class="" src="img/razer3.jpg" alt="5 slide"></<img>
-                      <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam, incidunt?</p>      
+                      <div class="description">
+                          <p >Lorem ipsum dolor sit amet consectetur.</p>
+                          <span>$25</span>
                     </div>
                     <div class="__product">
                       <img class="" src="img/razer3.jpg" alt="6 slide"></<img>
-                      <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam, incidunt?</p>
+                      <div class="description">
+                          <p >Lorem ipsum dolor sit amet consectetur.</p>
+                          <span>$20</span>
                     </div>
                 </div>
             </div>
