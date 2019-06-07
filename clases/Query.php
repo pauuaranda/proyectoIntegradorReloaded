@@ -9,10 +9,10 @@
             return $usuario;
         }
         static public function cambioPass($email,$newpass,$pdo,$tabla){
-            $sql="update $tabla set password=:newpass where email= :email";
+            $sql="update $tabla set password=:newpass where email = :email";
             $query = $pdo->prepare($sql);
             $query->bindValue(':email',$email);
-            $query->bindValue(':newpass',password_hash($newpass),PASSWORD_DEFAULT);
+            $query->bindValue(':newpass',password_hash($newpass,PASSWORD_DEFAULT));
             $query->execute();
         }
     }
