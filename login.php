@@ -12,7 +12,7 @@
       if ($usuario==null) {
         $errores["email"]="primero debe registrarse";
       }else{
-        if(password_verify($pass,$usuario["password"])==false){
+        if(password_verify($pass,$usuario['password'])==false){
           $errores["pass"]="Usuario o contraseña Erroneas";
         }else{
           $session->setUser($usuario);
