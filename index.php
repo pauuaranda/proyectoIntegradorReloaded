@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/index.css">
     <title>:: Black Eye Gaming ::</title>
 </head>
@@ -59,27 +60,44 @@
         </li>
     </ul>
  </div>
-    <div class="carousel slide" data-ride="carousel">
+ <div class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <div class="__slider">
                     <div class="__product">
                       <img class="" src="img/razer2.jpg" alt="1 slide"></<img>
                       <div class="description">
-                          <p >Lorem ipsum dolor sit amet consectetur.</p>
-                          <span>$40</span>
+                          <p class="item">item1</p>
+                          <p>Price: <em>$449</em></p>
+                          <button class="add-to-cart" type="button">Add to cart</button>
+                          <img src="img/new.png" alt="">
+                      </div>
                     </div>
                     <div class="__product">
                       <img class="" src="img/razer2.jpg" alt="2 slide"></<img>
                       <div class="description">
-                          <p >Lorem ipsum dolor sit amet consectetur.</p>
-                          <span>$40</span>
+                          <p class="item"> Item2</p>
+                          <p>Price: <em>$449</em></p>
+                          <button class="add-to-cart" type="button">Add to cart</button>
+                          <img src="img/new.png" alt="">
+                      </div>
                     </div>
                     <div class="__product">
-                      <img class="" src="img/razer2.jpg" alt="3 slide"></<img>
+                      <img class="" src="img/razer3.jpg" alt="3 slide"></<img>
                       <div class="description">
-                          <p >Lorem ipsum dolor sit amet consectetur.</p>
-                          <span>$40</span>
+                          <p class="item">Item3</p>
+                          <p>Price: <em>$449</em></p>
+                          <button class="add-to-cart" type="button">Add to cart</button>
+                          <img src="img/new.png" alt="">
+                      </div>
+                    </div>
+                    <div class="__product">
+                      <img class="" src="img/razer3.jpg" alt="4 slide"></<img>
+                      <div class="description">
+                          <p class="item">Item4</p>
+                          <p>Price: <em>$449</em></p>
+                          <button class="add-to-cart" type="button">Add to cart</button>
+                          <img src="img/new.png" alt="">
                       </div>
                     </div>
                 </div>
@@ -87,31 +105,49 @@
             <div class="carousel-item">
                 <div class="__slider">
                     <div class="__product">
-                      <img class="" src="img/razer3.jpg" alt="4 slide"></<img>
+                      <img class="" src="img/razer2.jpg" alt="4 slide"></<img>
                       <div class="description">
-                          <p>Lorem ipsum dolor sit amet consectetur.</p>
-                          <span>$30</span>
+                          <p class="item">Item5</p>
+                          <p>Price: <em>$449</em></p>
+                          <button class="add-to-cart" type="button">Add to cart</button>
+                          <img src="img/new.png" alt="">
+                      </div>
                     </div>
                     <div class="__product">
                       <img class="" src="img/razer3.jpg" alt="5 slide"></<img>
                       <div class="description">
-                          <p >Lorem ipsum dolor sit amet consectetur.</p>
-                          <span>$25</span>
+                          <p class="item">Item6</p>
+                          <p>Price: <em>$449</em></p>
+                          <button class="add-to-cart" type="button">Add to cart</button>
+                          <img src="img/new.png" alt="">
+                      </div>      
                     </div>
                     <div class="__product">
                       <img class="" src="img/razer3.jpg" alt="6 slide"></<img>
                       <div class="description">
-                          <p >Lorem ipsum dolor sit amet consectetur.</p>
-                          <span>$20</span>
+                          <p class="item">Item7</p>
+                          <p>Price: <em>$449</em></p>
+                          <button class="add-to-cart" type="button">Add to cart</button>
+                          <img src="img/new.png" alt="">
+                      </div>
+                    </div>
+                    <div class="__product">
+                      <img class="" src="img/razer3.jpg" alt="6 slide"></<img>
+                      <div class="description">
+                          <p class="item">Item8</p>
+                          <p>Price: <em>$449</em></p>
+                          <button class="add-to-cart" type="button">Add to cart</button>
+                          <img src="img/new.png" alt="">
+                      </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
  
- <script src="js/main.js"></script>
- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
