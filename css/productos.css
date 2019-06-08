@@ -51,7 +51,15 @@
  .productos{
      display: flex;
      flex-wrap: nowrap;
-     width: 50%;
+     
+ }
+ .productos img{
+     width: 100%;
+     height: 100%;
+ }
+
+ article .productos{
+    background-color: aquamarine;
  }
 
  /*---------------------Media Querie Medium-------------------*/
@@ -66,9 +74,58 @@
 @media(min-width:992px){
     .containerPage{
         background-color:aquamarine;
-        height: 100%; 
+        height: 12em; 
         width: 91%;
         margin-left: 9%;
+        margin-top: -5.5em;
         
     }
+    .containerProducts {
+        margin-top: 25%;
+        margin-left: 6%;
+        margin-right: 2%;
+    }
+    .sectionProductos .productos {
+        width: 19%;
+        height: auto;
+        margin-bottom: 100px;
+    }
+
+    
 }
+/* ---------------------Media Querie Extra Large----------------*/
+@media(min-width:1440px){
+    
+    .container_NavBarVertical {
+        display: flex;
+        flex-direction: row;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 130px;
+        height: 100%;
+        background: #000;
+        z-index: 1001;
+    }
+
+    .containerProducts {
+        margin-top: 25%;
+        margin-left: 3%;
+        margin-right: 2%;
+    }
+
+    .containerPage{
+        background-color:aquamarine; 
+        width: 94%;
+        margin-left: 6%;
+        margin-top: -5.5em;
+        height: 16em;
+        
+    }
+    .sectionProductos .productos {
+        width: 19%;
+        height: auto;
+        margin-bottom: 100px;
+    }
+
+    }

@@ -22,6 +22,13 @@
                     <article class="productos"><img src="img/razer3.jpg" alt="A1"></article>
                     <article class="productos"><img src="img/razer3.jpg" alt="A1"></article>
                     <article class="productos"><img src="img/razer3.jpg" alt="A1"></article>
+                    <article class="productos"><img src="img/razer3.jpg" alt="A1"></article>
+                    <article class="productos"><img src="img/razer3.jpg" alt="A1"></article>
+                    <article class="productos"><img src="img/razer3.jpg" alt="A1"></article>
+                    <article class="productos"><img src="img/razer3.jpg" alt="A1"></article>
+                    <article class="productos"><img src="img/razer3.jpg" alt="A1"></article>
+                    <article class="productos"><img src="img/razer3.jpg" alt="A1"></article>
+                    <article class="productos"><img src="img/razer3.jpg" alt="A1"></article>
                 </section>
             </div>
         

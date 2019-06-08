@@ -56,7 +56,7 @@ CREATE TABLE `Users` (
   `first_name` varchar(45) COLLATE utf8mb4_unicode_ci NOT NULL,
   `last_name` varchar(45) COLLATE utf8mb4_unicode_ci NOT NULL,
   `email` varchar(45) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `password` varchar(45) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `password` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
   `profile` int(11) NOT NULL,
   `avatar` longtext COLLATE utf8mb4_unicode_ci,
   PRIMARY KEY (`id`)
