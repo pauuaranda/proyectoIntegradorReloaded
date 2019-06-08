@@ -99,6 +99,7 @@ body{
 
 .slider li img {
    width:100%;
+   z-index: 100;
 }
 
 .slider .caption{
@@ -111,7 +112,7 @@ body{
    display:flex;
    flex-direction: column; 
    justify-content: center;
-   z-index:1000;
+   z-index:600;
    transition: left 0.8s ease;
    transform: translateX(-55%) skewX(-10deg); 
    background-color: #000000ab;
@@ -174,13 +175,17 @@ body{
 }
 
 .carousel{
-   position:inherit;
+   position: relative;
+   top:85px; 
+
 }
 
 .carousel-inner{
-   width: 91%;
-   float: right;
+   width: 85%;
    margin: 0 auto;
+   height: 30vh;
+   
+  
 }
 
 .__slider{
@@ -190,14 +195,158 @@ body{
 }
 
 .__slider .__product{
-   margin: 0 auto;
-   width:25%;
+   margin-top: 2%;
+   width:23%;
+   background-color: #222222;
+   border-radius: 35px;
    padding:1%;
 }
 .__slider .__product img{
-   max-width: 100%;
+   width: 100%;
+   height:60%;
+   padding:0;
+   border-radius: 35px;
 }
 
+
 .__slider .__product .description{
-   background-color: white;
+   background-color: #222222;
+   width: 100%;
+   height: 35%;
+}
+.__slider .__product .description img{
+   width: 26%;
+   height: 70%;
+   position:relative;
+   top:-145px;
+   left:-2%;
+}
+.description p{
+   font-size: 60%;
+   display: block;
+   margin: 0 0 10px 0;
+   padding: 0 0 5px 0;
+   margin:0;
+   color:#FFFFFF;
+}
+.description .item{
+   border-bottom: 1px solid #ccc;
+}  
+
+button {
+   width: 100%;
+   height: 50%;
+   font-size: 45%;
+   border: 1px solid #DE3435;
+   padding: 4px 14px;
+   background-color: #DE3435;
+   color: #FFFFFF;
+   text-transform: uppercase;
+   float: right;
+   margin: 5px 0;
+   font-weight: bold;
+   cursor: pointer;
+   border-radius: 20px;
+}
+
+/*----Media querie-----*/
+
+@media(min-width:768px){
+   .carousel-inner{
+      height:50vh;
+   }
+   .__slider .__product img{
+      height:60%;
+   }
+
+   .__slider .__product .description img{
+      top: -238px;
+      left:-5%;
+   }
+
+   button{
+      font-size:70%;
+   }
+   .description p{
+      font-size: 70%;
+   }
+}
+
+
+@media(min-width:992px){
+   
+
+.contenedor{
+   background-color: aqua;
+}
+
+.carousel{
+   position:inherit;
+}
+
+.carousel-inner{
+   width: 90%;
+   float: right;
+   margin: 0 auto;
+   height: 65vh;
+}
+
+.__slider{
+   display:flex;
+   width: 100%;
+   margin: 0 auto;
+}
+
+.__slider .__product{
+   margin-top: 2%;
+   width:20%;
+   background-color: #222222;
+   border-radius: 35px;
+   padding:1%;
+}
+.__slider .__product img{
+   width: 100%;
+   height:70%;
+   padding:0;
+   border-radius: 35px;
+}
+
+
+.__slider .__product .description{
+   background-color: #222222;
+   width: 100%;
+   height: 30%;
+}
+.__slider .__product .description img{
+   width: 26%;
+   height: 70%;
+   position:relative;
+   top:-355px;
+   left:-7%;
+}
+.description p{
+   font-size: 85%;
+   display: block;
+   margin: 0 0 10px 0;
+   padding: 0 0 5px 0;
+   margin:0;
+   color:#FFFFFF;
+}
+.description .item{
+   border-bottom: 1px solid #ccc;
+}  
+
+button {
+   font-size: 85%;
+   border: 1px solid #DE3435;
+   padding: 4px 14px;
+   background-color: #DE3435;
+   color: #FFFFFF;
+   text-transform: uppercase;
+   float: right;
+   margin: 5px 0;
+   font-weight: bold;
+   cursor: pointer;
+   border-radius: 20px;
+}
 }
