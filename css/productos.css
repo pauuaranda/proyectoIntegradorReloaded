@@ -3,6 +3,7 @@
     box-sizing: border-box;
     margin: 0 auto;
     padding: 0;
+
 }
 
 @font-face{
@@ -36,6 +37,7 @@
  }
 .containerProducts{
     margin-top: 50px;
+    
 }
   .sectionProductos{
      display: flex;
@@ -51,6 +53,10 @@
  .productos{
      display: flex;
      flex-wrap: nowrap;
+     /* background-color:grey;
+     padding: 1%; */
+     height: 45%;
+     
      
  }
  .productos img{
@@ -67,7 +73,7 @@
     .sectionProductos .productos {
         width: 24%;
         height: auto;
-        margin-bottom: 100px;
+        
     }
  }
 /* ---------------------Media Querie Large----------------*/
@@ -84,11 +90,12 @@
         margin-top: 25%;
         margin-left: 6%;
         margin-right: 2%;
+        
     }
     .sectionProductos .productos {
         width: 19%;
         height: auto;
-        margin-bottom: 100px;
+        
     }
 
     
@@ -124,8 +131,6 @@
     }
     .sectionProductos .productos {
         width: 19%;
-        height: auto;
-        margin-bottom: 100px;
+        height: auto;  
     }
-
-    }
+}

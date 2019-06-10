@@ -24,6 +24,7 @@
     border-bottom: 4px solid #8400ff;
     display: flex;
     padding-top: 20px
+    
 }
 
 .logo{
@@ -58,6 +59,7 @@
     height: 100%;
     background: #000;
     z-index: 1001;
+    margin:0
 }
 .logo_Vertical img{
     width: 116px;
@@ -108,6 +110,14 @@ top: 365px;
     z-index: 1002;
     left: 47px;
     top: 560px;
+}
+.admin_Icon img {
+    width: 35px;
+    display: flex;
+    position: absolute;
+    z-index: 1002;
+    left: 47px;
+    top: 505px;
 }
 .container_verticalIcons .row{
     position: absolute;
