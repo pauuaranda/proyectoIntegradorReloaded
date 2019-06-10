@@ -1,4 +1,6 @@
  
+<?php include_once("autoload.php");
+?>
 <!-- /*----------------------------Mobile First NavBar-------------------------------*/  -->
 <link rel="stylesheet" href="css/navBar.css">
 <nav>
@@ -26,13 +28,25 @@
             <div class="search_Icon">
             <a  class="nav_Icons" href="searchResult.php"><img src="img/search.svg" alt="search_icon"> </a>
             </div>
-            <div class="profile_Icon">
-            <a  class="nav_Icons" href="login.php"><img src="img/profile2.svg" alt="profile_icon"> </a>
-            </div>
-
-        <div class="admin_Icon">
-            <a  class="nav_Icons" href="administrar.php"><img src="img/admin.svg" alt="admin_icon"> </a>
-        </div>
+        <?php
+        if($_SESSION){
+            echo "<div class='profile_Icon'>";
+            echo "<a class='nav_Icons' href='login.php'><img src='" . $_SESSION['avatar'] . "' alt=''> </a>";
+            echo" </div>";
+        }else{
+            echo" <div class='profile_Icon'>";
+            echo" <a  class='nav_Icons' href='login.php'><img src='img/profile2.svg' alt='profile_icon'> </a>";
+           echo" </div>";
+        }
+        ?>
+        <?php 
+        if($_SESSION){     
+            if($_SESSION["perfil"]=="97"){
+            echo"<div class='admin_Icon'>";
+              echo"  <a  class='nav_Icons' href='administrar.php'><img src='img/admin.svg' alt='admin_icon'> </a>";
+            echo"</div>";
+            }
+        } ?>
         <div class="help_Icon">
             <a  class="nav_Icons" href="faqs.php"><img src="img/help.svg" alt="help_icon"> </a>
         </div>
