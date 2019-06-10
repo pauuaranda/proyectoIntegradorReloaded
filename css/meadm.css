@@ -46,17 +46,35 @@ p{
     background:none;
     border-color: blueviolet;
     border-width: 1px;
+    color: #c7c7c7;
+
 }
 .btn{
     margin-top: 1em;
     width: 10vw;
     background: none;
     margin-bottom: 1em;
+    color: #c7c7c7;
+    border-width: 1px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
 }
 .btn:hover{
     border-color: blueviolet;
+    font-size: 1em;
+}
+.btn2{
+    color: #c7c7c7;
+    font-weight: 200;
+    font-size: 1.1em;
+    margin-left: 1em;
+}
+.btn2:hover{
+    text-decoration-color: blueviolet;
     font-size: 1.2em;
 }
+
 @media(max-width:642px){
     .container{
         width: 55vw;
