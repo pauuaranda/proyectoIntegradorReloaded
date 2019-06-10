@@ -6,19 +6,18 @@
             }
         }
         static public function setUser($user){
-            $_SESSION["nombre"]=$user["nombre"];
-            $_SESSION["apellido"]=$user["apellido"];
+            $_SESSION["nombre"]=$user["first_name"];
+            $_SESSION["apellido"]=$user["last_name"];
             $_SESSION["email"]=$user["email"];
             $_SESSION["avatar"]=$user["avatar"];
-            $_SESSION["perfil"]=$user["perfil"];
+            $_SESSION["perfil"]=$user["profile"];
             
         }
         static public function setCookie($user,$dato){
                 if($dato!=null){
                 setcookie("email",$user["email"],time()+3600);
-                setcookie("perfil",$user["perfil"],time()+3600);
+                setcookie("perfil",$user["profile"],time()+3600);
                 setcookie("avatar",$user["avatar"],time()+3600);
-                setCookie("perfil",$usuario["perfil"],time()+3600);
                 }    
         }
         static public function validarUser(){
