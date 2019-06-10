@@ -5,20 +5,14 @@ if (isset($_GET["id"])) {
     $modificarUser =  Query::modificarUser($pdo,'Users',$id_usuario);
   }
   
-  if (isset($_POST["si"])) {
+  if ($_POST) {
     foreach ($_POST as $key => $value) {
-        try{
             $sql="update Users set $key='$value' where Users.id=:id";
             $query=$pdo->prepare($sql);
             $query->bindValue(':id',$_POST['id']);
-            $query->execute();
-        }catch(Exception $e){
-            redirect("administrar.php");
-        }
-          }
-    } elseif (isset($_POST["no"])){
-        redirect("adminUsers.php");
-}
+            $query->execute(); 
+          }redirect("administrar.php");
+    } 
 ?>  
 <html lang="es" dir="ltr">
   <head>
@@ -44,8 +38,9 @@ if (isset($_GET["id"])) {
       <?php endforeach;?>
     <br>
     <p>Esta seguro que quieres modificar este usuario?</p>
-      <input type="submit" name="si" value="si" class="btn">
-      <input type="submit" name="no" value="no" class="btn">
+      <input type="submit" class="btn">
+      <a href="adminUsers.php" class="btn2">Cancelar</a>
+      
       <input type="hidden" name="id" value="<?=$id_usuario;?>">
    </form>
 </div>
