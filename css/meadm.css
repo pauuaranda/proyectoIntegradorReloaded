@@ -36,6 +36,7 @@ h2{
 p{
     text-decoration: underline;
     text-decoration-color: blueviolet;
+    text-transform: uppercase;
 }
 .inp{
     border: solid;

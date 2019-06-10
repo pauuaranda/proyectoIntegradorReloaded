@@ -29,7 +29,7 @@
             $query->execute();
         }
         static public function modificarUser($pdo,$tabla,$idUser){
-            $sql = "select $tabla.id, $tabla.first_name, $tabla.email, $tabla.profile from $tabla where $tabla.id = '$idUser'";
+            $sql = "select $tabla.id, $tabla.first_name,$tabla.last_name, $tabla.email, $tabla.profile from $tabla where $tabla.id = '$idUser'";
             $query = $pdo->prepare($sql);
             $query->execute();
             $modificarUser=$query->fetch(PDO::FETCH_ASSOC);
