@@ -15,7 +15,8 @@
         <a class="botonNavBar" href="carrito.php" ><img class="botonNavBar"src="img/carrito.svg" alt="Shopping_Cart"></a>
        <?php 
         if($_SESSION){
-            echo "<a class='botonNavBar' href='login.php'><img src='" . $_SESSION['avatar'] . "' alt='' class='botonNavBar'> </a>";
+            echo "<div class='login'><a class='botonNavBar' href='login.php'><img src='" . $_SESSION['avatar'] . "' alt='' class='botonNavBar'>
+            <a  class='__logout' href='logout.php'>Log out</a> </a></div>";
            // echo "<a  class='__logout' href='logout.php'>Log out</a>";
         }else{
             echo" <a class='botonNavBar' href='login.php' ><img class='botonNavBar'src='img/profile2.svg' alt='Profile_icon'></a>";

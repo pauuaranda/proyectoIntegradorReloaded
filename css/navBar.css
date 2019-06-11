@@ -23,7 +23,7 @@
     height: 76px;
     border-bottom: 4px solid #8400ff;
     display: flex;
-    padding-top: 20px
+    padding-top: 20px;
     
 }
 
@@ -42,6 +42,29 @@
 }
 .help_Icon img{
     display: none;
+}
+.login{
+    height: 140%;
+    overflow: hidden;
+    z-index: 500;
+}
+.__logout{
+    position: absolute;
+    color: #fff;
+    background-color:#000;
+    display: flex;
+    padding:1%;
+    width: 10%;
+    top: -71%;
+    right:3%;
+    transition: top 0.8s ease;
+    z-index: -500;
+}
+.login:hover .__logout{
+    display: flex;
+    top:107%;
+    transition: top 0.8s ease;
+    z-index: -500;
 }
 
 /* --------------------------------MEDIA QUERIES------------------------------------------- */
@@ -134,11 +157,13 @@ top: 365px;
     color:#fff;
     padding: 2%;
     transform: translateX(0%);
+    transform: translateY(0%);
     transition: left 0.8s ease;
     display: flex;
-    top: 435px;
+    top: 445px;
     position: absolute;
     width: 45%;
+    right:-55px;
 }
 
 
