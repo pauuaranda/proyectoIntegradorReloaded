@@ -14,7 +14,12 @@
         <div class="logo"><a href="index.php"><img src="img/logo.svg" alt=""></a></div>
         <a class="botonNavBar" href="carrito.php" ><img class="botonNavBar"src="img/carrito.svg" alt="Shopping_Cart"></a>
         <a class="botonNavBar" href="login.php" ><img class="botonNavBar"src="img/profile2.svg" alt="Profile_icon"></a>
-        <a  class="botonNavBar" href="administrar.php"><img src="img/admin.svg" alt="admin_icon"> </a>
+        <?php 
+        if($_SESSION){     
+            if($_SESSION["perfil"]=="97"){
+              echo"  <a  class='botonNavBar' href='administrar.php'><img src='img/admin.svg' alt='admin_icon'> </a>";
+            }
+        } ?>
         </div>
 <div class="container_NavBarVertical">
         <div class="logo_Vertical"><a href="index.php"><img src="img/logo.svg" alt=""></a></div>
@@ -32,7 +37,7 @@
         if($_SESSION){
             echo "<div class='profile_Icon'>";
             echo "<a class='nav_Icons' href='login.php'><img src='" . $_SESSION['avatar'] . "' alt=''> </a>";
-            echo" </div>";
+            echo "<a  class='__logout' href='logout.php'>Log out</a>";
         }else{
             echo" <div class='profile_Icon'>";
             echo" <a  class='nav_Icons' href='login.php'><img src='img/profile2.svg' alt='profile_icon'> </a>";

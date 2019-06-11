@@ -87,6 +87,7 @@
     left: 40px;
     top: 280px;
 }
+
 .profile_Icon img{
     width: 45px;
     display: flex;
@@ -126,4 +127,19 @@ top: 365px;
     top: 50%;
     margin: auto 0;
 }
+
+
+.__logout{
+    background-color: #000;
+    color:#fff;
+    padding: 2%;
+    transform: translateX(0%);
+    transition: left 0.8s ease;
+    display: flex;
+    top: 435px;
+    position: absolute;
+    width: 45%;
+}
+
+
 }
