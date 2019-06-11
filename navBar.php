@@ -13,7 +13,14 @@
         <a class="botonNavBar" href="search.php" ><img class="botonNavBar"src="img/search.svg" alt="Search"></a>
         <div class="logo"><a href="index.php"><img src="img/logo.svg" alt=""></a></div>
         <a class="botonNavBar" href="carrito.php" ><img class="botonNavBar"src="img/carrito.svg" alt="Shopping_Cart"></a>
-        <a class="botonNavBar" href="login.php" ><img class="botonNavBar"src="img/profile2.svg" alt="Profile_icon"></a>
+       <?php 
+        if($_SESSION){
+            echo "<a class='botonNavBar' href='login.php'><img src='" . $_SESSION['avatar'] . "' alt='' class='botonNavBar'> </a>";
+           // echo "<a  class='__logout' href='logout.php'>Log out</a>";
+        }else{
+            echo" <a class='botonNavBar' href='login.php' ><img class='botonNavBar'src='img/profile2.svg' alt='Profile_icon'></a>";
+        }
+        ?>
         <?php 
         if($_SESSION){     
             if($_SESSION["perfil"]=="97"){
